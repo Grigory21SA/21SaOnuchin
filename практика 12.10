@@ -23,7 +23,57 @@ elif pl < 60 or pl > 100:
 
 if s >= 1:
     print("Требуется врач")
-elif m >= 1:
-    print("Легкое недомогание")
+
+задача 2 рулетка
+n = int(input())
+
+if n < 0 or n > 36:
+    print("ошибка ввода")
+elif n == 0:
+    print("зеленый")
+elif 1 <= n <= 10:
+    if n % 2 != 0:
+        print("красный")
+    else:
+        print("черный")
+elif 11 <= n <= 18:
+    if n % 2 != 0:
+        print("черный")
+    else:
+        print("красный")
+elif 19 <= n <= 28:
+    if n % 2 != 0:
+        print("красный")
+    else:
+        print("черный")
+elif 29 <= n <= 36:
+    if n % 2 != 0:
+        print("черный")
+    else:
+        print("красный")
+
+задача 3 шахматная доска
+c1 = int(input())
+r1 = int(input())
+c2 = int(input())
+r2 = int(input())
+
+s1 = (c1 + r1) % 2
+s2 = (c2 + r2) % 2
+
+if s1 == s2:
+    print("YES")
 else:
-    print("Нормальное состояние")
+    print("NO")
+
+задача 4 ход сллона
+c1 = int(input())
+r1 = int(input())
+c2 = int(input())
+r2 = int(input())
+
+if abs(c1 - c2) == abs(r1 - r2):
+    print("YES")
+else:
+    print("NO")
+
